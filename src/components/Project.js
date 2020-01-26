@@ -37,7 +37,7 @@ export class Project extends Component {
         let {title, description, tech, linkLive, linkSource} = this.props
         let liveButton
         if (linkLive){
-            liveButton = <a href={linkLive}><button className="w-100 project-demo-button btn btn-outline-info"><i class="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>
+            liveButton = <a href={linkLive}><button className="w-100 project-demo-button btn btn-outline-info"><i className="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>
         } else {
             liveButton = <button className="w-100 project-demo-button btn btn-outline-info" disabled>Demo not available</button>
         }
@@ -50,7 +50,7 @@ export class Project extends Component {
                     <p className="card-text">{description}</p>
                     <p>Technologies used: {tech.join(', ')}</p>
                     {liveButton}
-                    <a href={linkSource}><button className="w-100 project-source-button btn btn-outline-primary"><i class="fab fa-github mr-2"></i>View Source</button></a>
+                    <a href={linkSource}><button className="w-100 project-source-button btn btn-outline-primary"><i className="fab fa-github mr-2"></i>View Source</button></a>
                 </div>
             </div>
         )

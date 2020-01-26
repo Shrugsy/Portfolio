@@ -184,6 +184,15 @@ nav {
   width: 100%;
 }
 
+.CrossfadeImage {
+  background-size: cover;
+}
+
+.CrossfadeImage img{
+  width: 100%;
+  background-size: cover;
+}
+
 
 @media(max-width:568px){
   .pimg1, .pimg2, .pimg3, .pimg4{
