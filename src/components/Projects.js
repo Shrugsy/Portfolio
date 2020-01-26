@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Project from "./Project";
 
 
-import warbler1 from "../images/projects/warbler1.png";
+import warbler1 from "../images/projects/warbler1.jpg";
 import warbler2 from "../images/projects/warbler2.png";
 
-import yelpcamp1 from "../images/projects/yelpcamp1.png";
-import yelpcamp2 from "../images/projects/yelpcamp2.png";
-import yelpcamp3 from "../images/projects/yelpcamp3.png";
-import yelpcamp4 from "../images/projects/yelpcamp4.png";
+import yelpcamp1 from "../images/projects/yelpcamp1.jpg";
+import yelpcamp2 from "../images/projects/yelpcamp2.jpg";
+import yelpcamp3 from "../images/projects/yelpcamp3.jpg";
+import yelpcamp4 from "../images/projects/yelpcamp4.jpg";
 
 import sudoku1 from '../images/projects/sudoku1.png';
 
