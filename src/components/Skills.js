@@ -4,7 +4,7 @@ export class Skills extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="skills" className="pimg2">
+        <div id="skills" name="skills" className="pimg2">
           <div className="ptext">
             <span className="border trans h1">
               <i className="fas fa-book mr-2"></i>Skills

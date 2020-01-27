@@ -17,6 +17,8 @@ import clock2 from '../images/projects/clock2.png';
 import clock3 from '../images/projects/clock3.png';
 
 
+
+
 // expected props to pass to Project:
 // props:
 // image
@@ -35,7 +37,7 @@ export class Projects extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="projects" className="pimg3">
+        <div id="projects" name="projects" className="pimg3">
           <div className="ptext">
             <span className="border trans h1">
               <i className="far fa-keyboard mr-2"></i>Projects

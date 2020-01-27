@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Intro extends Component {
     render() {
         return (<React.Fragment>
-            <div id="#" className="pimg1">
+            <div id="#home" name="home" className="pimg1">
                 <div className="ptext">
                     <div id="about"></div>
                     <span className="border-custom">

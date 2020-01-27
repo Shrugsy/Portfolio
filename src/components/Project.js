@@ -35,16 +35,18 @@ export class Project extends Component {
 
     render() {
         let {title, description, tech, linkLive, linkSource} = this.props
-        let liveButton
+        let liveButton, liveImage
         if (linkLive){
-            liveButton = <a href={linkLive}><button className="w-100 project-demo-button btn btn-outline-info"><i className="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>
+            liveButton = <a href={linkLive}><button className="w-100 project-demo-button btn btn-outline-info"><i className="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>;
+            liveImage = <a href={linkLive}><CrossfadeImage src={this.state.image} alt="" containerClass="CrossfadeImage card-img-top project-img hasLink"/></a>;
         } else {
-            liveButton = <button className="w-100 project-demo-button btn btn-outline-info" disabled>Demo not available</button>
+            liveButton = <button className="w-100 project-demo-button btn btn-outline-info" disabled>Demo not available</button>;
+            liveImage = <CrossfadeImage src={this.state.image} alt="" containerClass="CrossfadeImage card-img-top project-img"/>;
         }
         
         return (
             <div className="card project">
-                <a href={linkLive}><CrossfadeImage src={this.state.image} alt="" className="card-img-top project-img"/></a>
+                {liveImage}
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>

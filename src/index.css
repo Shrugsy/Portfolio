@@ -74,7 +74,7 @@ li {
 .pimg4 {
   background-image:url('./images/bird4.jpg');
   min-height: 75vh;
-  background-position: 60% 0%;
+  background-position: 50% 0%;
 }
 
 
@@ -104,15 +104,17 @@ li {
   font-size: 3rem;
 }
 
+.icons i{
+  transition: all 0.5s;
+}
+
+.icons i:hover{
+  transform: scale(1.5);
+}
+
 .icon {
   color: inherit;
   line-height: 0;
-}
-
-.logo {
-  filter: hue-rotate(00deg)
-  /* #8C8C8C */
-  /* #4E554F */
 }
 
 .ptext{
@@ -178,6 +180,12 @@ nav {
 
 .project {
   color: black;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 20px 20px 8px rgb(73, 73, 73);
 }
 
 .project-img {
@@ -186,6 +194,7 @@ nav {
 
 .CrossfadeImage {
   background-size: cover;
+  position:relative;
 }
 
 .CrossfadeImage img{

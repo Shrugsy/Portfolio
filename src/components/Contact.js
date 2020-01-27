@@ -4,8 +4,8 @@ export class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="contact" className="pimg4">
-          <div className="ptext ">
+        <div id="contact" name="contact" className="pimg4">
+          <div className="ptext">
             <span className="border trans h1">
               <i className="fas fa-id-card mr-2"></i>Contact
             </span>
