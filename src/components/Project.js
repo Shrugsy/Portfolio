@@ -33,12 +33,24 @@ export class Project extends Component {
         }
     }
 
+    // handleClick and handleKey are to get rid of the 'focus' look after clicking
+    handleClick(e) {
+        if (e) {e.preventDefault()};
+    }
+
+    handleKey = (e) => {
+        if (e.keyCode === 13 | e.keyCode === 32) {
+            this.handleClick()
+        }
+    }
+
     render() {
+
         let {title, description, tech, linkLive, linkSource} = this.props
         let liveButton, liveImage
         if (linkLive){
-            liveButton = <a href={linkLive}><button className="w-100 project-demo-button btn btn-outline-info"><i className="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>;
-            liveImage = <a href={linkLive}><CrossfadeImage src={this.state.image} alt="" containerClass="CrossfadeImage card-img-top project-img hasLink"/></a>;
+            liveButton = <a href={linkLive} target="_blank" rel="noopener noreferrer" onMouseDown={this.handleClick} onKeyUp={this.handleKey}><button className="w-100 project-demo-button btn btn-outline-info"><i className="fas fa-arrow-circle-right mr-2"></i>Live Demo</button></a>;
+            liveImage = <a href={linkLive} target="_blank" rel="noopener noreferrer" onMouseDown={this.handleClick} onKeyUp={this.handleKey}><CrossfadeImage src={this.state.image} alt="" containerClass="CrossfadeImage card-img-top project-img"/></a>;
         } else {
             liveButton = <button className="w-100 project-demo-button btn btn-outline-info" disabled>Demo not available</button>;
             liveImage = <CrossfadeImage src={this.state.image} alt="" containerClass="CrossfadeImage card-img-top project-img"/>;
@@ -52,7 +64,7 @@ export class Project extends Component {
                     <p className="card-text">{description}</p>
                     <p>Technologies used: {tech.join(', ')}</p>
                     {liveButton}
-                    <a href={linkSource}><button className="w-100 project-source-button btn btn-outline-primary"><i className="fab fa-github mr-2"></i>View Source</button></a>
+                    <a href={linkSource} target="_blank" rel="noopener noreferrer" onMouseDown={this.handleClick} onKeyUp={this.handleKey}><button className="w-100 project-source-button btn btn-outline-primary"><i className="fab fa-github mr-2"></i>View Source</button></a>
                 </div>
             </div>
         )
