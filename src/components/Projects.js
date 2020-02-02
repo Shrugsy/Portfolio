@@ -16,6 +16,10 @@ import clock1 from '../images/projects/clock1.png';
 import clock2 from '../images/projects/clock2.png';
 import clock3 from '../images/projects/clock3.png';
 
+import palette1 from '../images/projects/paletteGenerator1.png';
+import palette2 from '../images/projects/paletteGenerator2.png';
+import palette3 from '../images/projects/paletteGenerator3.png';
+
 
 
 
@@ -48,6 +52,28 @@ export class Projects extends Component {
           <div className="m-auto">
             <div className="container">
               <div className="row">
+
+              <div className="col-12 col-lg-6 mb-5">
+                  <Project
+                    images={[palette1, palette2, palette3]}
+                    title="Palette Generator"
+                    description="Web app to generator a colour palette based on an image URL or uploaded image file."
+                    tech={["Node.js", "Express", "React", "Material UI", "HTML", "CSS", "JS"]}
+                    linkLive="https://cjf-palette-generator.herokuapp.com/"
+                    linkSource="https://github.com/Shrugsy/Palette-Generator"
+                  />
+                </div>
+
+                <div className="col-12 col-lg-6 mb-5">
+                  <Project
+                    images={[clock1, clock2, clock3]}
+                    title="Clock with countdown timer"
+                    description="A desktop clock with toggleable timer in the style of google.com's inbuilt timer. Built in order to experiment with using React for a desktop application."
+                    tech={["Node.js", "Electron", "React", "HTML", "CSS", "JS"]}
+                    linkSource="https://github.com/Shrugsy/Clock_with_Countdown_Timer"
+                  />
+                </div>
+
                 <div className="col-12 col-lg-6 mb-5">
                   <Project
                     images={[warbler1, warbler2]}
@@ -57,8 +83,9 @@ export class Projects extends Component {
                     linkLive="https://warbler-client-cjf.herokuapp.com/"
                     linkSource="https://github.com/Shrugsy/warbler"
                   />
-                  </div>
-                  <div className="col-12 col-lg-6 mb-5">
+                </div>
+
+                <div className="col-12 col-lg-6 mb-5">
                   <Project
                     images={[yelpcamp1, yelpcamp2, yelpcamp3, yelpcamp4]}
                     title="YelpCamp"
@@ -67,6 +94,7 @@ export class Projects extends Component {
                     linkSource="https://github.com/Shrugsy/yelpCamp"
                   />
                 </div>
+
                 <div className="col-12 col-lg-6 mb-5">
                   <Project
                     images={[sudoku1]}
@@ -76,16 +104,12 @@ export class Projects extends Component {
                     linkLive="https://sudokuboardgame.herokuapp.com/"
                     linkSource="https://github.com/Shrugsy/Sudoku"
                   />
-                  </div>
-                  <div className="col-12 col-lg-6 mb-5">
-                  <Project
-                    images={[clock1, clock2, clock3]}
-                    title="Clock with countdown timer"
-                    description="A desktop clock with toggleable timer in the style of google.com's inbuilt timer. Built in order to experiment with using React for a desktop application."
-                    tech={["Node.js", "electron", "react", "HTML", "CSS", "JS"]}
-                    linkSource="https://github.com/Shrugsy/Clock_with_Countdown_Timer"
-                  />
                 </div>
+
+
+
+
+                
               </div>
             </div>
           </div>
