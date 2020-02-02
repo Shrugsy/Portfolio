@@ -57,7 +57,7 @@ export class Projects extends Component {
                   <Project
                     images={[palette1, palette2, palette3]}
                     title="Palette Generator"
-                    description="Web app to generator a colour palette based on an image URL or uploaded image file."
+                    description="Web app to generate a colour palette based on an image URL or uploaded image file."
                     tech={["Node.js", "Express", "React", "Material UI", "HTML", "CSS", "JS"]}
                     linkLive="https://cjf-palette-generator.herokuapp.com/"
                     linkSource="https://github.com/Shrugsy/Palette-Generator"
