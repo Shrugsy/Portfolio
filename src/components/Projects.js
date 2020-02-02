@@ -16,9 +16,9 @@ import clock1 from '../images/projects/clock1.png';
 import clock2 from '../images/projects/clock2.png';
 import clock3 from '../images/projects/clock3.png';
 
-import palette1 from '../images/projects/paletteGenerator1.png';
-import palette2 from '../images/projects/paletteGenerator2.png';
-import palette3 from '../images/projects/paletteGenerator3.png';
+import palette1 from '../images/projects/paletteGenerator1.jpg';
+import palette2 from '../images/projects/paletteGenerator2.jpg';
+import palette3 from '../images/projects/paletteGenerator3.jpg';
 
 
 
